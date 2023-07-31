@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smallest Number</title>
+  </head>
+  <body>
+    <h1>
+      Given three variables x, y, and z, write a program to find the smallest
+      number among them using the ternary conditional operator ?.
+    </h1>
+    <script>
+      let x = prompt("Enter the value of x");
+      let y = prompt("Enter the value of y");
+      let z = prompt("Enter the value of z");
+      x > y && z > x
+        ? console.log("y is the smallest")
+        : y > x && z > y
+        ? console.log("x is the smallest")
+        : x > z && y > z
+        ? console.log("z is the smallest")
+        : console.log("All the number are equal");
+    </script>
+  </body>
+</html>

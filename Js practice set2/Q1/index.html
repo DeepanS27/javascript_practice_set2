@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <h1>
+      Write a JavaScript program that asks the user to calculateBMI that takes
+      the weight in kilograms and height in meters as parameters. Display an
+      alert saying Mass Index (BMI) of a person, which is calculated as weight /
+      (height * height).
+    </h1>
+    <script>
+      let name = prompt("Enter Your Full Name");
+      let height = prompt("Enter Your Height In Metre(m)");
+      let weight = prompt("Enter Your Weight In KiloGrams(kg)");
+      let BMI = weight / (height * height);
+      console.log(`Hi ${name} your BMI is ${BMI}`);
+
+      if (BMI < 16) {
+        console.log("Severe Thinness	< 16");
+      } else if (16 < BMI && BMI <= 17) {
+        console.log("Moderate Thinness	16 - 17");
+      } else if (17 < BMI && BMI <= 18.5) {
+        console.log("Mild Thinness	17 - 18.5");
+      } else if (18.5 < BMI && BMI <= 25) {
+        console.log("Normal	18.5 - 25");
+      } else if (25 < BMI && BMI <= 30) {
+        console.log("Overweight	25 - 30");
+      } else if (30 < BMI && BMI <= 35) {
+        console.log("Obese Class I	30 - 35");
+      } else if (35 < BMI && BMI <= 40) {
+        console.log("Obese Class II	35 - 40");
+      } else if (BMI > 40) {
+        console.log("Obese Class III	> 40");
+      }
+    </script>
+  </body>
+</html>
